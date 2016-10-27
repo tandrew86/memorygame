@@ -1,0 +1,284 @@
+.bg-body {
+    background-color: #262216;
+}
+
+.container-fluid {
+    font-family: 'Cabin Sketch', cursive;
+    color: #262216;
+    font-weight: bold;
+}
+
+#memoryGamePanel, #greetingPanel, #timerAndScoresPanel, #summaryPanel,
+#foundPairsPointsRow, #rowOfPointsForRemainingTime, #bonusPointsRow, 
+#replayButtonRow {
+    display: none;
+}
+
+#greetingPanel {
+    margin-top: 6em;
+    margin-bottom: 6em;
+    filter: drop-shadow(0.5em 0.5em 0.5em #97743a);
+    border-radius: 0.5em;
+    background-color: #97743a;
+}
+
+#gameTitle {
+    margin-top: 0.3em;
+    margin-bottom: 0;
+    text-shadow: 0.1em 0.1em 0.25em;
+}
+
+#gameInfoButton {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0.2em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    border: none;
+    background-color: #49412c;
+    opacity: 0.8;
+    color: #b0a18e;
+    filter: drop-shadow(0.2em 0.2em 0.2em #262216);
+}
+
+#gameInfoButton:hover {
+    background-color: #b0a18e;
+    color: #49412c;
+}
+
+#gameInfoButton:focus {
+    outline: none;
+}
+
+#gameInfo p {
+    display: none;
+    font-size: 0.825em;
+    padding: 0 0.5em 0 0.5em;
+}
+
+.showGameInfo {
+    background-color: #97743a;
+    border: none;
+}
+
+#playersName {
+    background-color: #262216;
+    color: #b0a18e;
+    border: none;
+    border-radius: 0.4em;
+    margin-top: 0em;
+}
+
+#playersName:focus {
+    outline: none;
+}
+
+#gameCategory p{
+    margin-top: 0.6em;
+    margin-bottom: 0;
+}
+
+.showCategoryError {
+    color: darkred;
+}
+
+.categoryPictures {
+    height: 10.625em;
+    width: 10.625em;
+    margin-top: 0.3em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    filter: grayscale(1);
+    box-shadow: 0.2em 0.2em 0.2em #262216;
+    border-radius: 0.5em;
+    opacity: 0.7;
+}
+
+.categoryPictures:hover {
+    border: 0.125em solid;
+}
+
+.textOfCategoryPictures {
+    display: none;
+    margin-bottom: 0;
+    text-shadow: 0.15em 0.15em 0.3em;
+}
+
+.selectedCategoryPicture {
+   filter: grayscale(40%);
+   box-shadow: none;
+}
+
+#submitButton {
+    background-color: #49412c;
+    opacity: 0.8;
+    color: #b0a18e;
+    border: none;
+    margin-bottom: 0.8em;
+    filter: drop-shadow(0.3em 0.3em 0.3em #262216);
+}
+
+#submitButton:hover {
+    background-color: #b0a18e;
+    color: #49412c;
+}
+
+#submitButton:focus {
+    outline: none;
+}
+
+#memoryGamePanel {
+   filter: drop-shadow(0.5em 0.5em 0.5em #97743a);
+   border-radius: 0.5em 0.5em 0.5em 0.5em;
+   background-color: #97743a;
+   margin-top: 0.3em;
+}
+
+#memoryGamePanel p{
+    margin-top: 0.8em;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+#startPlayButton {
+    background-color: #49412c;
+    opacity: 0.8;
+    color: #b0a18e;
+    border: none;
+    margin-top: -0.8em;
+    margin-bottom: 1em;
+    filter: drop-shadow(0.3em 0.3em 0.3em #262216);
+}
+
+#startPlayButton:hover {
+    background-color: #b0a18e;
+    color: #49412c;
+}
+
+#startPlayButton:focus {
+    outline: none;
+}
+
+.hideStartPlayButton {
+    display: none;
+}
+
+.gameCardsBackSide {
+    width: 7.813em;
+    height: 5.938em;
+    background-color: #49412c;
+    margin: 0 0.2em 0 0.2em;
+    box-shadow: 0.2em 0.2em 0.2em #262216;
+    border-radius: 0.5em;
+    opacity: 0.7;
+    position: relative;
+}
+
+.gameCardsBackSide:hover {
+    border: 0.125em solid #262216;
+    cursor: pointer;
+}
+
+.gameCards img {
+    width: inherit;
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.5em;
+    opacity: 1;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.selectedGameCardPicture {
+    opacity: 1;
+}
+
+.hiddenGameCardsBackSide {
+    background: none;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.complete {
+    display: none;
+}
+
+#timerAndScoresPanel {
+    margin-top: 2em;
+}
+
+#timerPanel, #scorePanel {
+   filter: drop-shadow(0.2em 0.2em 0.2em #97743a);
+   border-radius: 0.5em;
+   background-color: #97743a;  
+}
+
+#timer, #score {
+    border-radius: 0.5em;
+    border: 0.125em solid #262216;
+    background-color: #262216;
+    color: #b0a18e;
+    font-size: 2em;
+    text-align:right;
+}
+
+#timer {
+    text-align: center;
+}
+
+#timerPanelText, #scorePanelText {
+   margin-top: 0.2em;
+   margin-bottom: 0;
+}
+
+#summaryPanel {
+    margin-top: 5em;
+    filter: drop-shadow(0.5em 0.5em 0.5em #97743a);
+    border-radius: 0.5em;
+    background-color: #97743a;
+}
+
+#summaryPanel h3 {
+    padding-bottom: 0.6em;
+}
+
+.pointsSumText {
+    font-size: 1em;
+    text-align: right;
+}
+
+.pointsSum {
+    text-align: right;
+    font-size: 1em;
+    border-radius: 1em;
+    border: 0.125em solid #262216;
+    background-color: #262216;
+    color: #b0a18e;
+}
+
+#replayButton {
+    background-color: #49412c;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    opacity: 0.8;
+    color: #b0a18e;
+    border: none;
+    filter: drop-shadow(0.3em 0.3em 0.3em #262216);
+}
+
+#replayButton:hover {
+    background-color: #b0a18e;
+    color: #49412c;
+}
+
+#replayButton:focus {
+    outline: none;
+}
+
+
+
+
+
